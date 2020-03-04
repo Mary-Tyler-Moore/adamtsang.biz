@@ -1,0 +1,31 @@
+---
+imagesFluid: [image2.png, image1.jpg]
+---
+
+<BgImage
+  Tag="div"
+  sx={{
+    mt: 5,
+    height: '86vh',
+    width: '100%',
+    backgroundAttachment: 'fixed',
+    zIndex: '1'
+  }}
+  fluid={props.imagesFluid['image1.jpg']}
+  backgroundColor={props.context.theme.colors.backgroundHeader}
+>
+  <Div sx={{p: 4}} >
+    <h1 >Adam Tsang</h1>
+    <h4>BUSINESS AS USUAL</h4>
+  </Div>
+  
+  <ImgGatsby
+    fluid={props.imagesFluid['image2.png']}
+    sx={{
+      position: 'absolute !important',
+      bottom: '0px',
+      width: '100%',
+      height: '86vh'
+    }}
+  />
+</BgImage>
